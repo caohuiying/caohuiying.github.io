@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>jQuery 拼接json tree | 小白的博客</title>
+    <meta name="description" content="现在的现在不会等你预支将来的将来">
+    <link rel="icon" href="/logo.jpg">
+    
+    <link rel="preload" href="/assets/css/0.styles.09e6e69d.css" as="style"><link rel="preload" href="/assets/js/app.678bdd78.js" as="script"><link rel="preload" href="/assets/js/15.f7a2ca77.js" as="script"><link rel="prefetch" href="/assets/js/10.2cdefe4a.js"><link rel="prefetch" href="/assets/js/11.74e51ad8.js"><link rel="prefetch" href="/assets/js/12.d277af0c.js"><link rel="prefetch" href="/assets/js/13.bea61ded.js"><link rel="prefetch" href="/assets/js/14.2e5adbf4.js"><link rel="prefetch" href="/assets/js/16.d8134d68.js"><link rel="prefetch" href="/assets/js/17.eb33f629.js"><link rel="prefetch" href="/assets/js/18.ed377077.js"><link rel="prefetch" href="/assets/js/19.8ec09764.js"><link rel="prefetch" href="/assets/js/2.2543afa1.js"><link rel="prefetch" href="/assets/js/20.5c98d5c7.js"><link rel="prefetch" href="/assets/js/21.1e3968f4.js"><link rel="prefetch" href="/assets/js/22.90e0f3b0.js"><link rel="prefetch" href="/assets/js/3.5e11835e.js"><link rel="prefetch" href="/assets/js/4.ad9d02ac.js"><link rel="prefetch" href="/assets/js/5.05bd13c8.js"><link rel="prefetch" href="/assets/js/6.542162c3.js"><link rel="prefetch" href="/assets/js/7.f4672048.js"><link rel="prefetch" href="/assets/js/8.7b92b28c.js"><link rel="prefetch" href="/assets/js/9.7e9e8ce0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.09e6e69d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小白的博客</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active">基础库</a></div><div class="nav-item"><a href="/" class="nav-link">小白</a></div><div class="nav-item"><a href="https://github.com/caohuiying" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  特等舱
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active">基础库</a></div><div class="nav-item"><a href="/" class="nav-link">小白</a></div><div class="nav-item"><a href="https://github.com/caohuiying" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  特等舱
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>工具类</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/web/" class="sidebar-link">this is me</a></li><li><a href="/web/json-tree.html" class="active sidebar-link">jQuery 拼接json tree</a></li><li><a href="/web/heightlight.html" class="sidebar-link">搜索关键词高亮</a></li><li><a href="/web/date-format.html" class="sidebar-link">日期格式化</a></li><li><a href="/web/util.html" class="sidebar-link">常用的util方法</a></li><li><a href="/web/split-file-name.html" class="sidebar-link">JS截取文件名称不带后缀</a></li><li><a href="/web/array-move.html" class="sidebar-link">JS 数组元素上移或下移</a></li><li><a href="/web/markdown.html" class="sidebar-link">Markdown基本语法</a></li><li><a href="/web/less.html" class="sidebar-link">less整理文件</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>VUE</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>CANVAS</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>JQuery</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="jquery-拼接json-tree"><a href="#jquery-拼接json-tree" aria-hidden="true" class="header-anchor">#</a> jQuery 拼接json tree</h1> <div class="language-bash extra-class"><pre class="language-bash"><code>  var  treeJson <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      name:<span class="token string">'111'</span>,
+      link:<span class="token string">'###'</span>,
+      children:<span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          name:<span class="token string">'222'</span>,
+          link:<span class="token string">&quot;##&quot;</span>,
+          children:<span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              name:<span class="token string">'333'</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>,
+    <span class="token punctuation">{</span>
+      name:<span class="token string">'222'</span>,
+      link:<span class="token string">'###'</span>,
+      children:<span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          name:<span class="token string">'333'</span>,
+          link:<span class="token string">&quot;##&quot;</span>,
+          children:<span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              name:<span class="token string">'444'</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">;</span>
+  var makeTree <span class="token operator">=</span> function<span class="token punctuation">(</span>parentObj, treeJson<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      var ulObj <span class="token operator">=</span> <span class="token variable"><span class="token variable">$(</span><span class="token string">&quot;&lt;ul&gt;&lt;/ul&gt;&quot;</span><span class="token variable">)</span></span><span class="token punctuation">;</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span>var i <span class="token operator">=</span> 0<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> treeJson.length<span class="token punctuation">;</span> i++<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          var childHtml <span class="token operator">=</span> <span class="token string">&quot;&lt;li&gt;&quot;</span><span class="token punctuation">;</span>
+          var aHtml <span class="token operator">=</span> <span class="token string">&quot;&lt;a href=&quot;</span> + treeJson<span class="token punctuation">[</span>i<span class="token punctuation">]</span>.link + <span class="token string">&quot;&gt;&quot;</span> + treeJson<span class="token punctuation">[</span>i<span class="token punctuation">]</span>.name + <span class="token string">&quot;&lt;/a&gt;&quot;</span><span class="token punctuation">;</span>
+          childHtml +<span class="token operator">=</span> aHtml<span class="token punctuation">;</span>
+          childHtml +<span class="token operator">=</span> <span class="token string">&quot;&lt;/li&gt;&quot;</span><span class="token punctuation">;</span>
+          var childObj <span class="token operator">=</span> <span class="token variable"><span class="token variable">$(</span>childHtml<span class="token variable">)</span></span><span class="token punctuation">;</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>treeJson<span class="token punctuation">[</span>i<span class="token punctuation">]</span>.children <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> treeJson<span class="token punctuation">[</span>i<span class="token punctuation">]</span>.children.length <span class="token operator">&gt;</span> 0<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              makeTree<span class="token punctuation">(</span>childObj, treeJson<span class="token punctuation">[</span>i<span class="token punctuation">]</span>.children<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+          <span class="token variable"><span class="token variable">$(</span>ulObj<span class="token variable">)</span></span>.append<span class="token punctuation">(</span>childObj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token variable"><span class="token variable">$(</span>parentObj<span class="token variable">)</span></span>.append<span class="token punctuation">(</span><span class="token variable"><span class="token variable">$(</span>ulObj<span class="token variable">)</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  var parentObj <span class="token operator">=</span> <span class="token variable"><span class="token variable">$(</span><span class="token string">&quot;#treediv&quot;</span><span class="token variable">)</span></span><span class="token punctuation">;</span>
+  makeTree<span class="token punctuation">(</span><span class="token variable"><span class="token variable">$(</span>parentObj<span class="token variable">)</span></span>, treeJson<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/web/" class="prev router-link-active">
+          this is me
+        </a></span> <span class="next"><a href="/web/heightlight.html">
+          搜索关键词高亮
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.678bdd78.js" defer></script><script src="/assets/js/15.f7a2ca77.js" defer></script>
+  </body>
+</html>

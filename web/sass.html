@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>sass 整理 | 小白的博客</title>
+    <meta name="description" content="现在的现在不会等你预支将来的将来">
+    <link rel="icon" href="/logo.jpg">
+    
+    <link rel="preload" href="/assets/css/0.styles.09e6e69d.css" as="style"><link rel="preload" href="/assets/js/app.678bdd78.js" as="script"><link rel="preload" href="/assets/js/8.7b92b28c.js" as="script"><link rel="prefetch" href="/assets/js/10.2cdefe4a.js"><link rel="prefetch" href="/assets/js/11.74e51ad8.js"><link rel="prefetch" href="/assets/js/12.d277af0c.js"><link rel="prefetch" href="/assets/js/13.bea61ded.js"><link rel="prefetch" href="/assets/js/14.2e5adbf4.js"><link rel="prefetch" href="/assets/js/15.f7a2ca77.js"><link rel="prefetch" href="/assets/js/16.d8134d68.js"><link rel="prefetch" href="/assets/js/17.eb33f629.js"><link rel="prefetch" href="/assets/js/18.ed377077.js"><link rel="prefetch" href="/assets/js/19.8ec09764.js"><link rel="prefetch" href="/assets/js/2.2543afa1.js"><link rel="prefetch" href="/assets/js/20.5c98d5c7.js"><link rel="prefetch" href="/assets/js/21.1e3968f4.js"><link rel="prefetch" href="/assets/js/22.90e0f3b0.js"><link rel="prefetch" href="/assets/js/3.5e11835e.js"><link rel="prefetch" href="/assets/js/4.ad9d02ac.js"><link rel="prefetch" href="/assets/js/5.05bd13c8.js"><link rel="prefetch" href="/assets/js/6.542162c3.js"><link rel="prefetch" href="/assets/js/7.f4672048.js"><link rel="prefetch" href="/assets/js/9.7e9e8ce0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.09e6e69d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小白的博客</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active">基础库</a></div><div class="nav-item"><a href="/" class="nav-link">小白</a></div><div class="nav-item"><a href="https://github.com/caohuiying" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  特等舱
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active">基础库</a></div><div class="nav-item"><a href="/" class="nav-link">小白</a></div><div class="nav-item"><a href="https://github.com/caohuiying" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  特等舱
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>工具类</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/web/" class="sidebar-link">this is me</a></li><li><a href="/web/json-tree.html" class="sidebar-link">jQuery 拼接json tree</a></li><li><a href="/web/heightlight.html" class="sidebar-link">搜索关键词高亮</a></li><li><a href="/web/date-format.html" class="sidebar-link">日期格式化</a></li><li><a href="/web/util.html" class="sidebar-link">常用的util方法</a></li><li><a href="/web/split-file-name.html" class="sidebar-link">JS截取文件名称不带后缀</a></li><li><a href="/web/array-move.html" class="sidebar-link">JS 数组元素上移或下移</a></li><li><a href="/web/markdown.html" class="sidebar-link">Markdown基本语法</a></li><li><a href="/web/less.html" class="sidebar-link">less整理文件</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>VUE</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>CANVAS</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>JQuery</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="sass-整理"><a href="#sass-整理" aria-hidden="true" class="header-anchor">#</a> sass 整理</h1> <p><strong>一.sass是什么？</strong></p> <ul><li>Sass是成熟、稳定、强大的CSS预处理器，而SCSS是Sass3版本当中引入的新语法特性，完全兼容CSS3的同时继承了Sass强大的动态功能。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>**基本语法**
+- 1）变量
+变量用来存储需要在CSS中复用的信息，例如颜色和字体。SASS通过$符号去声明一个变量。
+example：
+``` md
+  //sass 样式
+  $red: #f00;
+  div {
+     color: $red;
+  }
+  // 编译为css后
+  div {
+      color:#f00;
+  }
+</code></pre></div><ul><li>特殊变量：如果变量嵌套在字符串中，则需要写在 #{} 符号里面，如：</li></ul> <div class="language-md extra-class"><pre class="language-md"><code>  $top: top;
+  div {
+<span class="token code keyword">      margin-#{$top}: 10px;       /* margin-top: 10px; */</span>
+  }
+</code></pre></div><ul><li>默认变量：仅需在值后面加入 !default即可， 默认变量一般用来设置默认值，当该变量出现另外一个值时，
+无论定义先后，都会使用另外一个值，覆盖默认值</li></ul> <div class="language-md extra-class"><pre class="language-md"><code>  $color: red;
+  $color: blue !default;
+  div {
+<span class="token code keyword">      color: $color;    /* color:red; */</span>
+  }
+</code></pre></div><ul><li><p>多值变量：多值变量分为list类型和map类型，list有点像js对象中的数组，map类型像js中的对象</p></li> <li><p>1）list : 可通过空格，逗号或小括号分割多个值，使用 nth($变量名, $索引)取值。 list数据操作有其他函数，具体参考sass Functions</p></li></ul> <div class="language-md extra-class"><pre class="language-md"><code>//一维数据
+$px: 5px 10px 20px 30px;
+
+//二维数据，相当于js中的二维数组
+$px: 5px 10px, 20px 30px;
+$px: (5px 10px) (20px 30px);
+
+// 例子
+$px: 10px 20px;
+div {
+<span class="token code keyword">    margin:nth($px, 1) 0 0 nth($px, 2);    /* margin:10px 0 0 20px; */</span>
+}
+</code></pre></div><p>map: 数据以key和value组成，格式：$map: (key1: value1, key2: value2); map相关的函数有map-keys()、map-values()、map-get()、map-has-key()、map-merge()、map-remove()、keywords()等，情况图解
+<img src="/assets/img/sass.03650df1.png" alt="map"></p> <div class="language-md extra-class"><pre class="language-md"><code>//SCSS
+$social-colors: (
+<span class="token code keyword">    dribble: #ea4c89,</span>
+<span class="token code keyword">    facebook: #3b5998,</span>
+<span class="token code keyword">    github: #171515,</span>
+<span class="token code keyword">    google: #db4437,</span>
+<span class="token code keyword">    twitter: #55acee</span>
+);
+@each $name in map-keys($social-colors){
+<span class="token code keyword">    .btn-#{$name}{</span>
+<span class="token code keyword">        color: colors($name);</span>
+<span class="token code keyword">    }</span>
+}
+</code></pre></div><ul><li>2）计算功能</li> <li>sass允许使用算式。</li></ul> <div class="language-md extra-class"><pre class="language-md"><code>div {
+<span class="token code keyword">    padding: 2px * 4px;</span>
+<span class="token code keyword">    margin: (10px / 2);</span>
+<span class="token code keyword">    font-size: 12px + 4px;</span>
+}
+</code></pre></div><ul><li>3）嵌套</li> <li>标签嵌套</li></ul> <div class="language-md extra-class"><pre class="language-md"><code>// sass 样式
+div {
+<span class="token code keyword">    color: #333;</span>
+<span class="token code keyword">    a {</span>
+<span class="token code keyword">       font-size:14px;</span>
+<span class="token code keyword">       &amp;:hover {</span>
+<span class="token code keyword">          text-decoration:underline;</span>
+<span class="token code keyword">       }</span>
+<span class="token code keyword">    }</span>
+}
+
+// 编译后css
+div {
+<span class="token code keyword">    color: #333;</span>
+}
+div a {
+<span class="token code keyword">    font-size:14px;</span>
+}
+div a:hover {
+<span class="token code keyword">    text-decoration:underline;</span>
+}
+</code></pre></div><ul><li>属性嵌套：</li></ul> <div class="language-md extra-class"><pre class="language-md"><code>//sass 样式
+.fakeshadow {
+  border: {
+<span class="token code keyword">    style: solid;</span>
+<span class="token code keyword">    left: {</span>
+<span class="token code keyword">      width: 4px;</span>
+<span class="token code keyword">      color: #888;</span>
+<span class="token code keyword">    }</span>
+<span class="token code keyword">    right: {</span>
+<span class="token code keyword">      width: 2px;</span>
+<span class="token code keyword">      color: #ccc;</span>
+<span class="token code keyword">    }</span>
+  }
+}
+
+//css 编译后样式
+.fakeshadow {
+  border-style: solid;
+  border-left-width: 4px;
+  border-left-color: #888;
+  border-right-width: 2px;
+  border-right-color: #ccc;
+}
+</code></pre></div><ul><li>4）注释
+sass有两种注释风格</li></ul> <p>标准css注释： /* 注释 */， 会保留到编译后的文件中，压缩则删除</p> <p>单行注释： // 注释</p> <p>在标准注释 /*后面加入一个感叹号，表示重要注释，压缩模式也会保留注释，用于版权声明等。</p> <div class="language-md extra-class"><pre class="language-md"><code>/<span class="token italic"><span class="token punctuation">*</span>! 重要注释 <span class="token punctuation">*</span></span>/
+</code></pre></div><ul><li>5）继承
+sass 中，选择器继承可以让选择器继承另一个选择器的所有样式</li></ul> <div class="language-md extra-class"><pre class="language-md"><code>// sass样式
+h1 {
+<span class="token code keyword">    font-size:20px;</span>
+}
+div {
+<span class="token code keyword">    @extend h1;</span>
+<span class="token code keyword">    color:red;</span>
+}
+// css编译后样式
+h1 {
+<span class="token code keyword">    font-size:20px;</span>
+}
+div {
+<span class="token code keyword">    font-size:20px;</span>
+<span class="token code keyword">    color:red;</span>
+}
+</code></pre></div><p>使用占位符选择器 %</p> <ul><li>从sass3.2.0后，就可以定义占位选择器%，这个的优势在于，不调用不会有多余的css文件</li></ul> <div class="language-md extra-class"><pre class="language-md"><code>// sass样式
+%h1 {
+<span class="token code keyword">    font-size:20px;</span>
+}
+div {
+<span class="token code keyword">    @extend %h1;</span>
+<span class="token code keyword">    color:red;</span>
+}
+// css编译后样式
+div {
+<span class="token code keyword">    font-size:20px;</span>
+<span class="token code keyword">    color:red;</span>
+}
+</code></pre></div><ul><li>6）混合(mixin)</li></ul> <div class="language-md extra-class"><pre class="language-md"><code>//sass 样式
+@mixin opacity($opacity:50) {
+  opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+}
+
+.opacity{
+  @include opacity;      //参数使用默认值  50/100 = 0.5
+}
+.opacity-80{
+  @include opacity(80); //传递参数  80/100 = 0.8
+}
+
+//  css编译后样式
+.opacity{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+// ---------------------
+
+// 多参数
+@mixin center($width, $height) {
+<span class="token code keyword">    position: absolute;</span>
+<span class="token code keyword">    left:50%;</span>
+<span class="token code keyword">    top:50%;</span>
+<span class="token code keyword">    width:$width;</span>
+<span class="token code keyword">    height:$height;</span>
+<span class="token code keyword">    margin:(-$height / 2) 0 0 (-$width / 2);</span>
+}
+div {
+<span class="token code keyword">    @include center(200px, 100px);</span>
+}
+// css编译后样式
+div {
+<span class="token code keyword">    position: absolute;</span>
+<span class="token code keyword">    left:50%;</span>
+<span class="token code keyword">    top:50%;</span>
+<span class="token code keyword">    width:200px;</span>
+<span class="token code keyword">    height:100px;</span>
+<span class="token code keyword">    margin:-50px 0 0 -100px;</span>
+}
+
+// -------------------
+
+//多组值
+@mixin box-shadow($shadow...) {
+<span class="token code keyword">    -webkit-box-shadow: $shadow;</span>
+<span class="token code keyword">    box-shadow: $shadow;</span>
+}
+div {
+<span class="token code keyword">    @include box-shadow(0 1px 0 rgba(0,0,0,.4), 0 -1px 1px rgba(0,0,0,.4));</span>
+}
+// css编译后样式
+div {
+<span class="token code keyword">    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.4), 0 -1px 1px rgba(0,0,0,.4);</span>
+<span class="token code keyword">    box-shadow: 0 1px 0 rgba(0,0,0,.4), 0 -1px 1px rgba(0,0,0,.4);</span>
+}
+</code></pre></div><ul><li>@content：在sass3.2.0中引入， 可以用来解决css3中 @meidia 或者 @keyframes 带来的问题。它可以使@mixin接受一整块样式，接收的样式从@content开始</li></ul> <div class="language-md extra-class"><pre class="language-md"><code>//sass 样式
+@mixin max-screen($res){
+  @media only screen and ( max-width: $res )
+  {
+<span class="token code keyword">    @content;</span>
+  }
+}
+
+@include max-screen(480px) {
+  body { color: red }
+}
+
+//css 编译后样式
+@media only screen and (max-width: 480px) {
+  body { color: red }
+}
+</code></pre></div><p>使用@content解决@keyframes关键帧的浏览器前缀问题</p> <div class="language-md extra-class"><pre class="language-md"><code>// 初始化变量
+$browser: null;
+// 设置关键帧
+@mixin keyframes($name) {
+<span class="token code keyword">    @-webkit-keyframes #{$name} {</span>
+<span class="token code keyword">        $browser: '-webkit-'; @content;</span>
+<span class="token code keyword">    }</span>
+<span class="token code keyword">    @-moz-keyframes #{$name} {</span>
+<span class="token code keyword">        $browser: '-moz-'; @content;</span>
+<span class="token code keyword">    }</span>
+<span class="token code keyword">    @-o-keyframes #{$name} {</span>
+<span class="token code keyword">        $browser: '-o-'; @content;</span>
+<span class="token code keyword">    }</span>
+<span class="token code keyword">    @keyframes #{$name} {</span>
+<span class="token code keyword">        $browser: ''; @content;</span>
+<span class="token code keyword">    }</span>
+}
+
+// 引入
+@include keyframes(scale) {
+<span class="token code keyword">    100% {</span>
+<span class="token code keyword">        #{$browser}transform: scale(0.8);</span>
+<span class="token code keyword">    }</span>
+}
+
+// css编译后
+@-webkit-keyframes scale {
+<span class="token code keyword">    -webkit-transform: scale(0.8);</span>
+}
+@-moz-keyframes scale  {
+   -moz-transform: scale(0.8);
+}
+@-o-keyframes scale  {
+<span class="token code keyword">    -o-transform: scale(0.8);</span>
+}
+@keyframes scale  {
+<span class="token code keyword">    transform: scale(0.8);</span>
+}
+</code></pre></div><ul><li>7）颜色函数
+sass提供了一些内置的颜色函数</li></ul> <div class="language-md extra-class"><pre class="language-md"><code>lighten(#cc3, 10%)　　  // #d6d65c
+darken(#cc3, 10%) 　　　// #a3a329
+grayscale(#cc3) 　　　　// #808080
+complement(#cc3) 　　　// #33c
+</code></pre></div><ul><li>8）引入外部文件
+使用 @import 命令引入外部文件， 引入后，可使用外部文件中的变量等。</li></ul> <div class="language-md extra-class"><pre class="language-md"><code>@import &quot;_base.scss&quot;;
+</code></pre></div><p><strong>二.sass能做什么？</strong></p> <ul><li>可针对项目封装公共样式，公共属性，从而将复杂的css样式设计简单化，统一化处理；</li></ul> <p><strong>三.sass使用方式？</strong></p> <ul><li>1)基于ruby，需要安装ruby进行编译；</li> <li>2)第三方工具编译sass，如koala等；</li> <li>3)vue-cli可选择自动安装编译；</li></ul> <p><strong>四.sass我还能怎么用？高级用法</strong></p> <ul><li>结合vue项目开发时使用提高效率</li> <li><strong>高级用法：</strong></li> <li>1）函数 function
+sass允许用户编写自己的函数，以@function开始</li></ul> <div class="language-md extra-class"><pre class="language-md"><code>$fontSize: 10px;
+@function pxTorem($px) {
+<span class="token code keyword">    @return $px / $fontSize * 1rem;</span>
+}
+div {
+<span class="token code keyword">    font-size: pxTorem(16px);</span>
+}
+// css编译后样式
+div {
+<span class="token code keyword">    font-size: 1.6rem;</span>
+}
+</code></pre></div><ul><li>2）if条件语句
+@if语句可以用来判断</li></ul> <div class="language-md extra-class"><pre class="language-md"><code>// sass样式
+$type: monster;
+div {
+<span class="token code keyword">    @if $type == ocean {</span>
+<span class="token code keyword">        color: blue;</span>
+<span class="token code keyword">    } @else if $type == matador {</span>
+<span class="token code keyword">        color: red;</span>
+<span class="token code keyword">    } @else if $type == monster {</span>
+<span class="token code keyword">        color: green;</span>
+<span class="token code keyword">    } @else {</span>
+<span class="token code keyword">        color: black;</span>
+<span class="token code keyword">    }</span>
+}
+// css编译后样式
+div {
+<span class="token code keyword">    color: green;</span>
+}
+</code></pre></div><p><strong>三目判断：语法为 if($condition, $if_true, $if_false)。 三个参数分别表示： 条件，条件为真的值，条件为假的值</strong></p> <div class="language-md extra-class"><pre class="language-md"><code>if(true, 1px, 2px) =&gt; 1px
+if(false, 1px, 2px) =&gt; 2px
+</code></pre></div><ul><li>3）循环语句
+for循环有两种形式，分别为：@for $var from <start> through <end> 和 @for $var from <start> to <end>。 $var 表示变量，start表示开始值，end表示结束值，两种形式的区别在于 through 包括 end 的值，to 不包括 end 值。</end></start></end></start></li></ul> <div class="language-md extra-class"><pre class="language-md"><code>// sass样式
+@for $i from 1 to 4 {
+<span class="token code keyword">    .item-#{$i} {width: 2em * $i;}</span>
+}
+// css编译后样式
+.item-1 {
+<span class="token code keyword">    width: 2em;</span>
+}
+.item-2 {
+<span class="token code keyword">    width: 4em;</span>
+}
+.item-3 {
+<span class="token code keyword">    width: 6em;</span>
+}
+</code></pre></div><p>**while循环 **</p> <div class="language-md extra-class"><pre class="language-md"><code>
+// sass样式
+$i: 2;
+@while $i &gt; 0 {
+<span class="token code keyword">    .item-#{$i} {width: 2em * $i;}</span>
+<span class="token code keyword">    $i: $i - 1;</span>
+}
+// css编译后样式
+.item-2 {
+  width: 4em;
+}
+.item-1 {
+  width: 2em;
+}
+</code></pre></div><p><strong>@each循环：</strong>
+语法为@each $var in <list or="" map="">。 其中$var表示变量，而list和map表示数据类型，sass3.3.0新加入多字段循环和map数据循环
+单字段list数据循环</list></p> <div class="language-md extra-class"><pre class="language-md"><code>//sass 样式
+$animal-list: puma, sea-slug, egret;
+@each $animal in $animal-list {
+  .#{$animal}-icon {
+<span class="token code keyword">    background-image: url('/images/#{$animal}.png');</span>
+  }
+}
+//css 编译后样式
+.puma-icon {
+  background-image: url('/images/puma.png');
+}
+.sea-slug-icon {
+  background-image: url('/images/sea-slug.png');
+}
+.egret-icon {
+  background-image: url('/images/egret.png');
+}
+</code></pre></div><p>多字段list数据循环</p> <div class="language-md extra-class"><pre class="language-md"><code>//sass 样式
+$animal-data: (puma, black, default),(sea-slug, blue, pointer);
+@each $animal, $color, $cursor in $animal-data {
+  .#{$animal}-icon {
+<span class="token code keyword">    background-image: url('/images/#{$animal}.png');</span>
+<span class="token code keyword">    border: 2px solid $color;</span>
+<span class="token code keyword">    cursor: $cursor;</span>
+  }
+}
+//css 编译后样式
+.puma-icon {
+  background-image: url('/images/puma.png');
+  border: 2px solid black;
+  cursor: default;
+}
+.sea-slug-icon {
+  background-image: url('/images/sea-slug.png');
+  border: 2px solid blue;
+  cursor: pointer;
+}
+</code></pre></div><p>多字段map数据循环</p> <div class="language-md extra-class"><pre class="language-md"><code>//sass 样式
+$headings: (h1: 2em, h2: 1.5em, h3: 1.2em);
+@each $header, $size in $headings {
+  <span class="token title important"><span class="token punctuation">#</span>{$header} {</span>
+<span class="token code keyword">    font-size: $size;</span>
+  }
+}
+//css 编译后样式
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.2em;
+}
+</code></pre></div><p><strong>五.sass的优缺点有哪些？</strong></p> <ul><li>优点：高效开发，结构清晰，便于扩展</li> <li>缺点：须要编译。无论是放在客户端还是服务器端，都是一种额外的花销</li></ul> <p><strong>六.同类东西 这个东西具有啥优势？</strong></p> <ul><li>Less是基于JavaScript，是在客户端处理的。</li> <li>Sass是基于Ruby的，是在服务器端处理的。</li> <li>目前优势个人觉得sass更强大一些</li></ul> <p><em><strong>Less和Sass在语法上有些共性，比如下面这些：</strong></em></p> <ol><li>混入(Mixins)——class中的class；</li> <li>参数混入——可以传递参数的class，就像函数一样；</li> <li>嵌套规则——Class中嵌套class，从而减少重复的代码；</li> <li>运算——CSS中用上数学；</li> <li>颜色功能——可以编辑颜色；</li> <li>名字空间(namespace)——分组样式，从而可以被调用；</li> <li>作用域——局部修改样式；</li> <li>JavaScript 赋值——在CSS中使用JavaScript表达式赋值。</li></ol></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.678bdd78.js" defer></script><script src="/assets/js/8.7b92b28c.js" defer></script>
+  </body>
+</html>
